@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
     res.setHeader('Access-Control-Allow-Headers', '*');
 
     request.get({
-        url : url.parse(req.url, true).query.sURL
+        url : url.parse(req.url, true).query.url
     }).pipe(res);
 
 }).listen(7777);
